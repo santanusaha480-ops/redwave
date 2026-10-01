@@ -1,0 +1,10 @@
+/*
+  RedWave production security headers.
+  Compatible with Cloudflare Pages-style static hosting.
+*/
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://ezqmanriqclseoyxgugk.supabase.co; media-src 'self' blob: https://ezqmanriqclseoyxgugk.supabase.co; connect-src 'self' https://ezqmanriqclseoyxgugk.supabase.co; font-src 'self' data:; form-action 'self'

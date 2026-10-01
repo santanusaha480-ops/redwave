@@ -1,0 +1,1 @@
+Updated only the lower music player bar. It is now a floating rounded bar, raised 10px from the bottom, with the same dark/red theme. All other website sections remain unchanged.

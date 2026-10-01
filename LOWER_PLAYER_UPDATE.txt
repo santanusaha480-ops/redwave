@@ -1,0 +1,1 @@
+Lower player bar behavior updated: hidden by default and shown only after the user selects/clicks a song. It remains visible while controlling the current song.

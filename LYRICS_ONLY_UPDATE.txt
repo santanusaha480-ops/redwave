@@ -1,0 +1,1 @@
+Only the lyrics section was changed: it now opens centered as a Spotify-style lyrics panel. Other site features/files were preserved.

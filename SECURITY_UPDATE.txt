@@ -1,0 +1,15 @@
+# RedWave security + upload-title update
+
+Implemented:
+- Supabase client auth switched from implicit flow to PKCE.
+- Admin profile role can no longer be changed by normal authenticated users.
+- RLS remains enabled on profiles, songs and likes.
+- Production security headers added through your hosting provider.
+- Admin audio upload now automatically fills Song title from the uploaded filename:
+  extension, common separators and a leading track number are removed.
+- If the admin manually changes the title, selecting another audio file will not overwrite it.
+- A copy of the applied database hardening migration is included in SECURITY_HARDENING_APPLIED.sql.
+
+Important:
+- No website can honestly guarantee that "no hacker can ever hack it". The important protection is server-side authorization/RLS, secure auth, protected secrets, and careful storage policies.
+- The Supabase publishable key may appear in frontend code. Never put a service_role/secret key in this ZIP or browser code.

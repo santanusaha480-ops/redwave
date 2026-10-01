@@ -1,0 +1,2 @@
+Optimized this exact RedWave build for speed while preserving features.
+Songs/likes are cached, search is debounced, audio UI is throttled, lyrics only scroll when the lyric line changes, and expensive backdrop blur effects were removed.
